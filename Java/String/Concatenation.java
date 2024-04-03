@@ -1,3 +1,6 @@
+import java.util.StringJoiner;
+import java.util.*;
+
 public class Concatenation{
 	public static void main(String args[]){
 		// Concatenate two string as one string
@@ -27,7 +30,7 @@ public class Concatenation{
 
 		StringBuilder string_3 = new StringBuilder("Ashok");
 		StringBuilder string_4 = new StringBuilder("Kumar");
-		StringBuilder string_5 = string_3.concat(string_4);
+		StringBuilder string_5 = string_3.append(string_4);
 		System.out.println(string_5.toString());
 
 		//using format() method
@@ -41,7 +44,7 @@ public class Concatenation{
 
 		//Using String.join()
 
-		String string_9 = String.join(", ",s1,s2);
+		String string_9 = String.join(", ",string_1,string_2);
 		System.out.println(string_9.toString());
 
 		//______________________________________________________________________________________________________

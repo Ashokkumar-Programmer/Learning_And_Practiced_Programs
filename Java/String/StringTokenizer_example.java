@@ -1,3 +1,5 @@
+import java.util.StringTokenizer;
+
 //StringTokenizer Class
 
 //StringTokenizer is added by import java.util.StringTokenizer class
@@ -6,7 +8,7 @@
 
 //Delimiters is given at the creation of StringTokenizer.
 
-public class StringTokenizer{
+public class StringTokenizer_example{
 	public static void main(String args[]){
 		StringTokenizer s1 = new StringTokenizer("Ashok MCA FXCollege"," ");
 		StringTokenizer s2 = new StringTokenizer("Ashok MCA FXCollege");

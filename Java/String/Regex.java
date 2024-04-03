@@ -28,17 +28,17 @@ class Regex{
 		//______________________________________________________________________________________________________
 
 		String sentence2 = "Tamil is the oldest language";
-		Pattern p = Pattern.compile("^Tamil"); //caret(^) is used to check whether the given word is appears in starting
-		Matcher m = p.matcher(sentence2);
+		p = Pattern.compile("^Tamil"); //caret(^) is used to check whether the given word is appears in starting
+		m = p.matcher(sentence2);
 		while(m.find()){
 			System.out.println(m.group()+"    "+m.start()+"   "+m.end());
 		}
-		Pattern p1 = Pattern.compile("language$") //dollar($) is used to check whether the given word is appears in ending.
+		Pattern p1 = Pattern.compile("language$"); //dollar($) is used to check whether the given word is appears in ending.
 		Matcher m1 = p1.matcher(sentence2);
 		while(m1.find()){
 			System.out.println(m1.group()+"    "+m1.start()+"   "+m1.end());
 		}
-		Pattern p2 = Pattern.compile("T|a") //Pipe(|) for OR operation. It will check T or a appears in which places.
+		Pattern p2 = Pattern.compile("T|a"); //Pipe(|) for OR operation. It will check T or a appears in which places.
 		Matcher m2 = p2.matcher(sentence2);
 		while(m2.find()){
 			System.out.println(m2.group()+"    "+m2.start());
@@ -100,7 +100,7 @@ class Regex{
 		//This return given pattern no. of times occur in the given sentence.
 
 		String sentence5 = "abaabbaaabbbabab";
-		pattern p5 = Pattern.compile("a+");
+		Pattern p5 = Pattern.compile("a+");
 		/*
 		Here, + means given character occur atleast once or given character no. of times occur continously in the given sentence
 		Output:
@@ -166,7 +166,7 @@ class Regex{
 		a
 		a
 		*/
-		Matcher m5 = p5.matcher();
+		Matcher m5 = p5.matcher(sentence5);
 		while(m5.find()){
 			System.out.println(m5.group());
 		}
@@ -176,10 +176,10 @@ class Regex{
 		//split() method for Pattern and String classes
 		//spilt() is used to store the split words into array. It split the word based on given character.
 		String sentence6 = "Payilagam Chennai Tamil Nadu";
-		Pattern p = Pattern.compile("a");
-		String[] s = p.split(sentence6);
-		for(String s:s1){
-			System.out.println(s1);
+		p = Pattern.compile("a");
+		String[] s1 = p.split(sentence6);
+		for (String string : s1) {
+			System.out.println(string);	
 		}
 		/*
 		Output:

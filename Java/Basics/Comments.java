@@ -30,22 +30,15 @@ It is used to comment to mult line in a code.
 
 It is used to provide information about purpose of method, class, object, etc..
 
-Starting comment (/*) and Ending comment (*/).
+Starting comment /* and Ending comment */
 
 /*
-	
-	line of comments
-	
-*/
-
-/*
-
 ______________________________________________________________________________________________________
 (iii) Documentation comments:
 
 It is as like as multi line comment. It is used to write documentation for large project or software application.
 
-Starting comment (/**), then it between starting and ending statement (*) is occur for every line of comments and Ending comment (*/) 
+Starting comment ('/**'), then it between starting and ending statement (*) is occur for every line of comments and Ending comment */
 
 /**
  * documentation for project 

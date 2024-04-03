@@ -1,6 +1,6 @@
 // String Class Methods
 
-public class String_Class_methods(){
+public class String_Class_Methods{
 	public static void main(String args[]){
 
 		// toUpperCase() and toLowerCase()
