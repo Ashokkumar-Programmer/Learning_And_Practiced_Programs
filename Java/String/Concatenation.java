@@ -1,5 +1,4 @@
 import java.util.StringJoiner;
-import java.util.*;
 
 public class Concatenation{
 	public static void main(String args[]){

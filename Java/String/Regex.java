@@ -49,7 +49,7 @@ class Regex{
 		//Character Classes
 		//Within [] is called character classes
 		String sentence3 = "abcbcacabaaabbc";
-		Pattern p3 = Pattern.compile("[abc]"); //this means a or b or c.
+		p = Pattern.compile("[abc]"); //this means a or b or c.
 		/*
 
 		Pattern p3 = Pattern.compile("[^ab]"); //This means give character except a and b.
