@@ -3,6 +3,10 @@
 
     this keyword is used in,
 
+    We can able to return the current class object using this keyword like,
+    class_name method_name(){
+        return this;
+    }
     */
 //(i) refer current class instance variable
 class Student1{
