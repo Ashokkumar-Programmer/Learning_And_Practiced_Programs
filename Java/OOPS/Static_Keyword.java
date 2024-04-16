@@ -31,5 +31,38 @@ public class Static_Keyword {
     When the main() is executed then automatically the static block also executed. Here the static block is executed first then the main() is executed.
 
     Before JDK 1.7, static block is replacement of main(). Without main() also we can execute the program using static block. But After JDK 1.7, main() is must needed.
-    */    
+    */ 
+
+    int rollno; //instance variable
+    String name; //instance variable
+    static String college = "FX"; //static variable
+    Static_Keyword(int rollno, String name){
+        this.rollno = rollno;
+        this.name = name;
+    }
+
+    static void change_college(){
+        college = "Aditanar";
+    }
+    void display(){
+        System.out.println(rollno+"   "+name+"   "+college);
+    }
+    public static void main(String[] args) {
+        Static_Keyword s = new Static_Keyword(1,"Ashok");
+        s.display();
+        Static_Keyword.change_college();
+        Static_Keyword s1 = new Static_Keyword(2, "Hari");
+        s1.display();
+    }   
+
+    /*
+    In above program,
+        The static variable and instance variable created.
+        If we create instance of class, then all variable will be allocated to memory except static variable.
+        Because static variable is allocated to memory only once, if you created instance then it will get the value of static variable from memory.
+        If we want to change the value of static, then use static method to change it.
+        static method is call using the classname only, it will can't invoke by object.
+        static variable contains common property for all instance.
+
+    */
 }
